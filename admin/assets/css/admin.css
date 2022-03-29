@@ -1,0 +1,636 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+@font-face{
+  font-family: "shasenem-kurd";
+  src: url("shasenem-kurd.eot"); /* IE9 Compat Modes */
+  src: url("shasenem-kurd.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("shasenem-kurd.ttf") format("truetype"), /* Safari, Android, iOS */
+  url("shasenem-kurd.woff") format("woff"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+/*login page*/
+.container{
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+}
+.details{
+	width: 50%;
+	background-color: black;
+	height: 400px;
+  border: 2px solid white;
+  border-radius: 10px;
+}
+.details img{
+  margin-top: 20px;
+  width: 300px;
+}
+.details input{
+  margin-top: 20px;
+  width: 300px;
+  height: 40px;
+  border: 2px solid white;
+  border-radius: 20px;
+  background-color: transparent;
+  outline: none;
+  text-align: center;
+  color: white;
+  font-size: 16px;
+}
+/*home page*/
+.all-details{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  direction: rtl;
+  margin: 150px 0;
+}
+.all-details-card{
+  width: 400px;
+  height: 130px;
+  margin-top: 150px;
+  border-radius: 20px;
+  background-color: #51B82A;
+  margin: 20px 20px;
+}
+.card-info{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
+}
+.card-info img{
+  width: 100px;
+  margin: 10px;
+  position: absolute;
+  left: 0;
+}
+.card-info .card-text h1{
+  font-size: 26px;
+  font-family: "shasenem-kurd";
+  position: absolute;
+  right: 0;
+  margin: 10px;
+  color: #2D2F32;
+}
+/*first line for all page*/
+.edit img{
+  margin-top: 100px;
+  width: 400px;
+}
+.edit input{
+  margin-bottom: 15px;
+  width: 400px;
+  height: 50px;
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 16px;
+}
+.edit button{
+  margin-bottom: 15px;
+  width: 400px;
+  height: 50px;
+  border: 1px solid white;
+  border-radius: 4px;
+  background-color: green;
+  padding: 10px;
+  font-size: 16px;
+  color: white;
+}
+/*cards for news page*/
+.cards{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.cards-details{
+  width: 300px;
+  height: 750px;
+  position: relative;
+  background: #ffffff;
+  box-shadow:  11px 11px 31px #d4d4d4,
+             -11px -11px 31px #ffffff;
+  margin: 40px 20px;
+}
+.cards-details img{
+  width: 300px;
+  margin: 0px;
+}
+.cards-details h1{
+  font-size: 20px;
+  padding: 0 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  color: black;
+}
+.cards-details p{
+  font-size: 16px;
+  margin: 0 10px;
+  margin-bottom: 10px;
+}
+.cards-button{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+}
+.cards-button button{
+  width: 100px;
+  background-color: red;
+  color: white;
+  font-family: "shasenem-kurd";
+  border: none;
+  margin: 10px 25px;
+}
+.cards-button button a{
+  color: white;
+  font-family: "shasenem-kurd";
+  text-decoration: none;
+}
+.modal-body input{
+  width: 400px;
+  height: 45px;
+  margin-bottom: 10px;
+}
+.modal-body button{
+  font-family: "shasenem-kurd";
+}
+
+/*cards for service page*/
+.service-card{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.our-card{
+  width: 300px;
+  height: 500px;
+  border-radius: 7px;
+  background: #ffffff;
+  box-shadow:  15px 15px 53px #b3b3b3,
+             -15px -15px 53px #ffffff;
+  margin: 10px 20px;
+  position: relative;
+}
+.our-card img{
+  width: 250px;
+  margin: 10px 10px;
+}
+.our-card h1{
+  font-size: 24px;
+  margin: 10px 20px;
+}
+.our-card p{
+  margin: 10px 20px;
+}
+.card-buttons{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+}
+.card-buttons button{
+  width: 100px;
+  font-family: "shasenem-kurd";
+  margin: 10px 25px;
+}
+/*edit for coustom page*/
+.edit textarea{
+  margin-bottom: 10px;
+}
+.our-coustom-card{
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+border-radius: 7px;
+  background: #ffffff;
+  box-shadow:  15px 15px 53px #b3b3b3,
+             -15px -15px 53px #ffffff;
+}
+.card-image{
+  width: 45%;
+}
+.card-image img{
+  width: 500px;
+}
+.card-text{
+  width: 45%;
+}
+.card-text h1{
+  font-size: 20px;
+}
+.card-text p{
+  font-size: 14px;
+  margin-top: 15px;
+}
+.card-text span{
+  font-size: 24px;
+  background-color: #2D2F32;
+  color: white;
+}
+.coustom-card button{
+  margin-top: 10px;
+  margin-bottom: 50px;
+  width: 200px;
+  font-family: "shasenem-kurd";
+}
+@media(max-width: 1150px){
+  .our-coustom-card{
+  width: 90%;
+}
+.card-image{
+  width: 100%;
+}
+.card-image img{
+  width: 300px;
+}
+.card-text{
+  width: 100%;
+}
+.card-text h1{
+  font-size: 20px;
+}
+.card-text p{
+  font-size: 14px;
+  margin-top: 10px;
+}
+.card-text span{
+  font-size: 24px;
+  background-color: #2D2F32;
+  color: white;
+}
+}
+/*edit for courses page*/
+.edit h1{
+  color: red;
+  font-size: 20px;
+  font-family: "shasenem-kurd";
+}
+.edit select{
+  margin-top: 10px;
+  margin-bottom: 15px;
+  width: 400px;
+  height: 50px;
+  border: 2px solid black;
+  border-radius: 6px;
+  background-color: transparent;
+  outline: none;
+  text-align: center;
+  color: black;
+  font-size: 16px;
+}
+/*card for courses page*/
+.courses-card{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.our-courses-card{
+  width: 300px;
+  height: 800px;
+  border-radius: 7px;
+  background: #ffffff;
+  box-shadow:  15px 15px 53px #b3b3b3,
+             -15px -15px 53px #ffffff;
+  margin: 40px 20px;
+  position: relative;
+}
+.our-courses-card img{
+  width: 250px;
+  margin: 10px 10px;
+}
+.our-courses-card h1{
+  font-size: 24px;
+  margin: 10px 20px;
+}
+.our-courses-card p{
+  margin: 10px 20px;
+}
+/*card for projects page*/
+.projects-card{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.our-projects-card{
+  width: 300px;
+  height: 800px;
+  border-radius: 7px;
+  background: #ffffff;
+  box-shadow:  15px 15px 53px #b3b3b3,
+             -15px -15px 53px #ffffff;
+  margin: 40px 20px;
+  position: relative;
+}
+.our-projects-card img{
+  width: 200px;
+  margin: 10px 0 10px 0;
+}
+.our-projects-card h1{
+  text-align: left;
+  font-size: 20px;
+  color: #252B32;
+  margin: 5px 5px;
+}
+.our-projects-card span{
+  font-family: 'Orbitron', sans-serif;
+  color: #298FF5;
+}
+.our-projects-card a{
+  text-align: left;
+  font-size: 11px;
+  color: black;
+  font-family: normal;
+}
+.our-projects-card h2{
+  text-align: left;
+  font-size: 20px;
+  font-family: 'Orbitron', sans-serif;
+  color: #298FF5;
+  margin: 5px 5px;
+}
+
+/*courses register page style*/
+.course-register img{
+  margin-top: 100px;
+  width: 400px;
+}
+.course-register-card{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.user-card{
+  width: 300px;
+  height: 340px;
+  border-radius: 7px;
+  background: #ffffff;
+  box-shadow:  15px 15px 53px #b3b3b3,
+             -15px -15px 53px #ffffff;
+  margin: 40px 20px;
+  position: relative;
+}
+.user-card img{
+  width: 200px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+.user-card h1{
+  text-align: left;
+  margin: 10px 20px;
+  font-size: 16px;
+}
+.user-card a{
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0 10px;
+  font-size: 20px;
+}
+/*contact msg page style*/
+.contact-msg img{
+  margin-top: 100px;
+  width: 400px;
+}
+.success h1{
+  color: green;
+  font-size: 26px;
+  font-family: "shasenem-kurd";
+  direction: rtl;
+}
+.contact-msg-card{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.user-msg-card{
+  width: 300px;
+  height: 300px;
+  border-radius: 7px;
+  background: #ffffff;
+  box-shadow:  15px 15px 53px #b3b3b3,
+             -15px -15px 53px #ffffff;
+  margin: 40px 20px;
+  position: relative;
+}
+.user-msg-card img{
+  width: 150px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+.user-msg-card h1{
+  text-align: left;
+  margin: 10px 20px;
+  font-size: 16px;
+}
+.user-msg-card a{
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0 10px;
+  font-size: 20px;
+}
+@media(max-width: 766px){
+/*login page*/
+.details{
+  width: 90%;
+  background-color: black;
+  height: 400px;
+  border: 2px solid white;
+  border-radius: 10px;
+}
+.details img{
+  width: 250px;
+}
+.details input{
+  width: 250px;
+}
+/*first line for all page*/
+.edit img{
+  width: 300px;
+}
+.edit input{
+  width: 300px;
+}
+.edit button{
+  width: 300px;
+}
+/*cards for news page*/
+.cards-button button{
+  width: 100px;
+  margin: 10px 25px;
+}
+/*edit for coustom page*/
+.coustom-card button{
+  width: 100px;
+}
+/*edit for all modal page*/
+.modal-body textarea{
+  width: 300px;
+}
+.modal-body input{
+  width: 300px;
+}
+/*edit for coustom app page*/
+.edit textarea{
+  width: 300px;
+}
+/*edit for courses page*/
+.edit select{
+  width: 300px;
+}
+/*courses register page style*/
+.course-register img{
+  width: 300px;
+}
+.user-card img{
+  width: 180px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+/*contact msg page style*/
+.contact-msg img{
+  width: 300px;
+}
+.user-msg-card img{
+  width: 130px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+}
+
+/*Nav Style*/
+nav {
+  color: black;
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  z-index: 100;
+  width: 100%;
+  font-weight: normal;
+  border-bottom: 2px solid white;
+  box-shadow:  5px 5px 10px #e0e0e0,
+             -5px -5px 10px #ffffff;
+  position: absolute;
+  top: 0;
+}
+.sticky{
+  background-color: white;
+}
+nav .out a{
+  display: inline-block;
+  padding: 25px 20px;
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-family: "shasenem-kurd";
+  font-weight: normal;
+}
+nav .mainMenu {
+  display: flex;
+  list-style: none;
+  padding: 10px 30px;
+  direction: rtl;
+}
+nav .mainMenu li a {
+  display: inline-block;
+  padding: 15px;
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: bold;
+  direction: rtl;
+  font-family: "shasenem-kurd";
+  font-weight: normal;
+}
+nav .openMenu {
+  font-size: 2rem;
+  margin: 20px;
+  display: none;
+  cursor: pointer;
+  color: white;
+}
+nav .mainMenu .closeMenu , .icons i {
+  font-size: 2rem;
+  display: none;
+  cursor: pointer;
+}
+@media(max-width: 1110px){
+  nav .mainMenu li a {
+  font-size: 1.0rem;
+}
+nav .out a{
+  font-size: 1.0rem;
+}
+}
+@media(max-width: 1023px){
+nav{
+   justify-content: space-between;
+}
+nav .mainMenu {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+  display: none;
+}
+nav .mainMenu li a {
+  color: white;
+}
+nav .mainMenu .closeMenu {
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: white;
+}
+nav .openMenu {
+  display: block;
+  color: black;
+}
+
+}
